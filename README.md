@@ -10,4 +10,3 @@ We then checked and compared their performance. The main assessment criteria was
 The result is a pipeline that is specialised for the data obtained by the Mellor Group2 and that does not require additional user input to determine thresholds.
 
 Apart from this, we also conducted some additional analysis on the generated data. We looked at the method of mRNA production, specifically, Transcription Bursting3. This was done using the Kolmogorov–Smirnov test to check for Poissonian distribution in the mRNA produced. We also compared the mRNA production between genes, and between different sets of the same gene. This was achieved using the Mann–Whitney U test.
-![image](https://user-images.githubusercontent.com/37789529/226200926-1aa09045-4392-4489-b5c5-c75a1f4fbd9f.png)
