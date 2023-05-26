@@ -1,12 +1,17 @@
 # Quantification of mRNA Levels in Yeast
 
-Quantification of mRNA levels is critical for the study of eukaryotic cells such as yeast. The handful existing pipelines that allow such quantification on smFISH images, although impressive, have their own advantages and disadvantages. One that has improved quite a lot in the past few years and is among the best for such quantification is FISH-quant’s Big-FISH package for Python. It offers excellent functions to segment nuclei and cells, detect spots and compute various features from the generated data. 
+## Repository Overview
+Welcome to my GitHub profile! This repository showcases my work on quantifying mRNA levels in yeast cells using smFISH images. By developing an advanced pipeline and employing machine learning techniques, I have aimed to enhance the accuracy and efficiency of mRNA quantification processes.
 
-One major drawback, however, is that Big-FISH requires manual user input for the threshold value for nucleus segmentation and cell segmentation. This is a tedious approach, especially when dealing with a large set of images. We have attempted to solve this using two methods: a) calculating the threshold using the Mode and Standard Deviation of the given image
-b) predicting the threshold using various features from the image as input 
+## Project Highlights
+**Abstract:** In this project, I developed a specialized pipeline using FISH-quant's Big-FISH package for Python to accurately quantify mRNA levels in yeast cells. The pipeline addresses the manual user input requirement for threshold determination, making it more efficient and user-friendly. Additionally, I conducted analysis on mRNA production and compared gene expression using statistical tests.
 
-We then checked and compared their performance. The main assessment criteria was the number of outliers detected using Tukey’s Method. Using ML led to a better performance – About 400 more cells were detected, slightly lesser outliers were produced, and the Upper Bounds of Tukey’s Fences were now in a smaller range.
+**Introduction:** Yeast cells provide a valuable system for studying biological cycles and metabolic disorders. To facilitate research in this area, I have focused on improving existing pipelines for mRNA quantification in smFISH images of yeast cells. The goal is to develop efficient and user-friendly solutions that require minimal input from the user while delivering meaningful results.
 
-The result is a pipeline that is specialised for the data obtained by the Mellor Group and that does not require additional user input to determine thresholds.
+**Conclusion:** My project successfully enhanced the quantification pipeline for mRNA levels in yeast cells. Notably, I improved spot detection by analyzing images individually, leading to more accurate results. Additionally, I addressed the issue of manual threshold determination by implementing two approaches: calculation based on image features and prediction using machine learning models. The pipeline now offers automated and reliable quantification of mRNA levels in smFISH images.
 
-Apart from this, we also conducted some additional analysis on the generated data. We looked at the method of mRNA production, specifically, Transcription Bursting. This was done using the Kolmogorov–Smirnov test to check for Poissonian distribution in the mRNA produced. We also compared the mRNA production between genes, and between different sets of the same gene. This was achieved using the Mann–Whitney U test.
+**Discussion:** This project opens up opportunities for further improvements and extensions. Some potential areas of focus include enhancing the machine learning model, evaluating spot detection performance, testing the pipeline on different genes or organisms, supporting various file formats, and exploring the application of the pipeline in different phases of the yeast metabolic cycle.
+
+## Get in Touch
+I invite you to explore the code and documentation in this repository to learn more about my research on quantifying mRNA levels in yeast cells. If you have any questions, collaboration opportunities, or suggestions, please feel free to reach out to me via LinkedIn or GitHub.
+
